@@ -1,0 +1,139 @@
+.enter {
+  background-image: url('food7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 100px;
+}
+
+.leftSide h1 {
+  padding-top: 230px;
+  text-align: center;
+  color: #d64b14;
+  text-shadow: 1px 1px rgb(209, 137, 89);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form {
+  text-align: center;
+}
+
+.AddBtn {
+  background-color: #d64b14;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.AddBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.AddBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.AddBtn:hover span {
+  padding-right: 25px;
+}
+
+.AddBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border: 2px solid #d64b14;
+  width: 600px;
+  height: 200px;
+  background-color: rgb(212, 158, 122);
+}
+.total {
+  font-size: 20px;
+  font-weight: bold;
+}
+th {
+  border-bottom: 1px solid black;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 30px;
+}
+
+td {
+  text-align: center;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: rgb(230, 188, 111);
+}
+
+.button {
+  background-color: #d64b14;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.inp {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 5rem;
+  width: 300px;
+}
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: oblique;
+  padding-right: 2.2rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: #d64b14;
+  text-shadow: 1px 1px rgb(209, 137, 89);
+}
+
+.label1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: oblique;
+  padding-right: 0.8rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: #d64b14;
+  text-shadow: 1px 1px rgb(209, 137, 89);
+}
