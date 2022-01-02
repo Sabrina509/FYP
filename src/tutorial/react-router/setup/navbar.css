@@ -1,7 +1,8 @@
 .start {
-  background-image: url('bg2.JPG');
+  background-image: url('food5.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
 }
 .row {
   display: flex;
@@ -10,32 +11,14 @@
   justify-content: space-around;
 }
 
-.bg {
-  background-image: url('bg.JPG');
-  height: 400px;
-  width: 400px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 10px;
-}
-
-.para {
-  flex-basis: 50%;
-  text-decoration: none;
-}
-.para h1 {
-  text-align: left;
-  font-family: cursive;
-}
-
 .NavbarItems {
-  background: linear-gradient(90deg, rgb(28, 36, 100) 0%, rgb(188, 151, 223));
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  background: linear-gradient(90deg, #d64b14 0%, #f37f51);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbar-logo {
@@ -43,21 +26,26 @@
   justify-self: start;
   margin-left: 10px;
   cursor: pointer;
+  font-family: brush script Mt;
+  font-size: 40px;
+  text-shadow: 3px 3px black;
 }
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 25px;
   list-style: none;
   text-align: center;
-  width: 100vw;
+  width: 70vw;
   justify-content: end;
   margin-right: 2rem;
 }
 
 .nav-menu a {
   color: black;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .nav-links {
@@ -67,15 +55,67 @@
 }
 
 .nav-links:hover {
-  background-color: #f76d6d;
-  border-radius: 4px;
-  transition: all 0.2s ease-out;
+  background-color: #e9926a;
+  border-radius: 5px;
 }
 
 .logBtn {
-  background-color: rgb(193, 188, 206);
+  background-color: #d64b14;
   font-weight: bold;
   padding-right: 20px;
   text-align: center;
   font-size: 15px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.logBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.logBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.logBtn:hover span {
+  padding-right: 25px;
+}
+
+.logBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.textt {
+  text-align: center;
+  padding-top: 250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px #eba184;
+  font-weight: bolder;
+}
+
+.text2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  background: linear-gradient(90deg, #d64b14 0%, #f37f51);
+  height: 28px;
+  margin-left: 470px;
+  margin-right: 470px;
+  background-position: center;
+  font-weight: 530;
+  border-radius: 12px;
 }
