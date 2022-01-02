@@ -3,10 +3,10 @@ import { MenuItems } from './MenuItems'
 import './navbar.css'
 import { Link } from 'react-router-dom'
 
-class Home extends Component {
+class Sales extends Component {
   render() {
     return (
-      <div className='start'>
+      <div>
         <nav className='NavbarItems'>
           <h1 className='navbar-logo'>Cafe Aylanto</h1>
 
@@ -25,16 +25,8 @@ class Home extends Component {
             <span>Logout</span>
           </button>
         </nav>
-        <div className='textt'>
-          <h1>WELCOME TO ERP SYSTEM</h1>
-        </div>
-        <div className='text2'>
-          <p>
-            <em>An Efficicent Way to Manage your Resources</em>
-          </p>
-        </div>
       </div>
     )
   }
 }
-export default Home
+export default Sales
